@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    font-weight: lighter;
+}
+
+.background-reproductor{
+    display: flex;
+    background: #E0D9C5;
+    width: 660px;
+    height: 302px;
+    align-items: center;
+    justify-content: center;
+}
+.reproductor{
+    background: #716E58;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 20px;
+
+}
+
+.cover img {
+    width: 160px;
+    height: 160px;
+}
+
+.funciones-reproductor{
+    padding-top: 17px;
+}
+
+.title-album {
+    color: #CCC5B1;
+    font-size: .62rem;
+    margin: 0 0 17px 0;
+}
+
+.title-album h1, .title-album h2{
+    position: relative;
+    left: 2px;
+}
+
+.title-album h2{
+    color: #9A9681;
+    font-size: 1rem;
+}
+
+.botones {
+    display: flex;
+    margin: 0 10px 27px 1px;
+    background: transparent;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.volume {
+    position: relative;
+    width: 100px;
+}
+
+.barra-volume {
+    position: absolute;
+    background: #e1dac6;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    width: 100px;
+    height: 7px;
+}
+
+.barra-reproduccion{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #e1dac6;
+    border-radius: 10px;
+    width: 262px;
+    height: 7px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.circle{
+    position: relative;
+    background: #e1dac6;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+

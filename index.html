@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spotify</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+	<div class="background-reproductor">
+		<div class="reproductor">
+			<div class="cover">
+				<img src="images/cover.png" alt="">
+			</div>
+			<div class="funciones-reproductor">
+				<div class="title-album">
+					<h1>Album Rock</h1>
+					<h2>Track 01 - Song Rock</h2>
+				</div>
+				<div class="botones">
+					<button class="play botones" onclick="play()">
+						<img src="images/btn-play.svg" alt="">
+					</button>
+					<button class="pause botones" onclick="pause()">
+						<img src="images/btn-pause.svg" alt="">
+					</button>
+					<button class="volume botones" onclick="play()">
+						<img src="images/btn-volume.svg" alt="">
+						<div class="barra-volume">
+
+						</div>
+					</button>
+				</div>
+				<div class="barra-reproduccion" id="barra">
+					<div class="circle" id="progreso"></div>
+					<audio src="audio/sample.mp3" id="audio"></audio>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="js/Reproductor.js"></script>
+</body>
+</html>
