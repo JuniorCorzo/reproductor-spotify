@@ -52,21 +52,22 @@ function clickVolume(event) {
 	document.querySelector(".circle-volume").style.left = (position - 10) + "px";
 }
 
+let isDraggingVolume = false;
 barVolume.addEventListener("click", clickVolume)
 
 function dragVolume(event) {
-	if (isDragging) {
+	if (isDraggingVolume) {
 		const position = event.clientX - barVolume.getBoundingClientRect().left;
 		audio.volume = position / barVolume.clientWidth;
-		document.querySelector(".circle-volume").style.left = (position - 10) + "px";
+		document.querySelector(".circle-volume").style.left = `${audio.volume * 80}%`;
 	}
 }
 barVolume.addEventListener("mousemove", dragVolume)
 barVolume.addEventListener("mousedown", () => {
-	isDragging = true;
+	isDraggingVolume = true;
 })
 barVolume.addEventListener("mouseup", () => {
-	if (isDragging){
-		isDragging = false;
+	if (isDraggingVolume){
+		isDraggingVolume = false;
 	}
 })
