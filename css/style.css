@@ -120,9 +120,17 @@ body{
     height: 20px;
 }
 
+.volume, .play, .pause{
+    transition: transform 0.2s ease;
+}
+
+.volume:hover, .play:hover, .pause:hover{
+    transform: scale(1.1);
+}
+
+
 .volume:hover .barra-volume{
     display: block;
-
 }
 
 .barra-reproduccion{
